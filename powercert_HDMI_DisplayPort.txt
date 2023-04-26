@@ -1,0 +1,34 @@
+HDMI, DISPLAYPORT, DVI, VGA : COMPARAISON DES PORTS VIDEO
+
+	Les ports vidéo sont généralement présents sur des ordinateurs, des moniteurs, des téléviseurs ou un nombre varié d'équipements vidéo de manière générale.
+
+> Le port VGA
+	Le port VGA, pour Video Graphics Array, s'agit d'un port assez ancien puisqu'il fait son apparition pour la première fois en 1987. Le port VGA possède 15 pins organisés selon 3 lignes et a pour particularité de  ne transporter que des données analogiques. Justement parce qu'il ne transporte que des données analogiques la qualité de la vidéo peut être dégradée pour des hautes résolutions et des distances de câble importantes. Généralement, l'adaptateur aux extrémités est de couleur bleue? Le port VGA était surtout utilisé sur les anciennes technologies de moniteurs à tubes cathodiques qui ont désormais disparu et ont été remplacés par des technologies plus récentes. Il est cependant toujours possible de trouver des ports VGA sur des équipements récents comme des moniteurs LCD. Toutefois, il s'agit d'une vieille technologie qui tend progressivement à se faire remplacer par d'autres plus modernes et efficaces.
+
+> Le port DVI
+	Le port DVI, ou Digital Visual Interface, constitue le successeur du port VGA, et a été développée en 1999 dans l'objectif de fournir de la vidéo en haute qualité et non-compressée. Le port DVI standard est décliné en 3 versions différentes :
+ - le DVIA, pour lequel le A représente le terme Analogue ; Il est uniquement utilisé pour envoyer des signaux analogiques.
+ - le DVI-D, pour lequel le D fait référence à Digital, utilisé pour uniquement envoyer des signaux numériques
+ - le DVI-I, employé pour transmettre à la fois des signaux analogiques et numériques.
+
+Dans le cas des ports DVI standards en mesures de n'envoyer que des signaux numériques, on peut distinguer deux options différentes :
+ - le single link, ou lien unique
+ - le dual link, ou lien double 
+La différence entre les deux réside dans le fait que le dual link propose 6 pins supplémentaires par rapport au simple link, lui permettant d'obtenir une définition plus élevée. Le DVI dual link permet de doubler la bande passante et propose une définition maximale de 2560x1600, alors que le single link ne propose que la définition 1920x1200 maximum.
+Pour le cas d'un port standard DVI, la couleur des connecteurs aux extrémités est généralement blanche.
+
+> Le port HDLI
+	Un autre type de port vidéo est l'HDMI, pour High Définition Multimedia Interface, et possède une large possibilité d'application en terme de produits électroniques comme des téléviseurs, des moniteurs, des ordinateurs portables, des consoles de jeux, et bien d'autres. Il s'agit du port vidéo le pus largement utilisé de nos jours et a été développé en 2002 afin de transmettre de la vidéo et de l'audio, ou de manière générale des données numériques, non-compressées et par le biais d'un seul et même câble. L'HDMI correspond à l'un des meilleurs standards Haute-Définition sur le marché de l'électronique en permettant de transmettre de la vidéo ou/et de l'audio avec une excellente qualité.
+	En 2005, l'HDMI 1.4 est dévoilé et ajoute un autre canal à l'HDMI pour les données et est désormais en capacité de communiquer en réseau. Cette fonctionnalité supplémentaire permet, grâce à l'HDMI, d'envoyer et de recevoir des données avec une vitesse maximale de 100 Mbps. En plus de la communication réseau, l'HDMI 1.4 supporte le transfert de vidéo 4K en 30 Hz (ou 30 fps).
+	En 2017, l'HDMI 2.1 fait son apparition, qui supporte désormais de meilleurs résolutions et un meilleur taux de rafraichissement : en effet, il supporte le transfert de vidéos 4K 120 Hz, celui des vidéos 8K à 60Hz voire même celui pour les vidéos en 10k pour des utilisations commerciales des systèmes audiovisuels et pour des usages spéciaux.
+
+> Le DisplayPort
+	Le DisplayPort est développé en 2006 par VESA, ou Video Electronics Standard Association. A l'origine, il a été conçu pour la vidéo mais, en plus il peut également support l'USB et les données audio. Il s'agit d'une interface de haute performance destinée à remplacer le VGA et le DVI. Le DisplayPort possède également la possibilité de se connecter, par le biais d'adaptateur aux ports VGA, DVI et HDMI. Son avantage par rapport à l'interface HDMI est sa capacité à proposer du multi-monitoring, c'est-à-dire permettre d'utiliser plusieurs moniteurs placés en chaîne les uns derrière les autres. Il est donc possible de faire fonctionner 3 moniteurs en n'utilisant qu'un seul port DisplayPort, tandis qu'il aurait fallu 3 ports pour faire de même avec de l'HDMI. Il s'agit donc d'une des raisons pour lesquelles le DisplayPort est plus adapté à certaines utilisations, comme des moniteurs plutôt que des téléviseurs.
+	Un autre avantage que le DisplayPort présente par rapport à l'HDMI est qu'il possède un mécanisme de verrouillage gardant l'adaptateur enfoncé et en place dans le port dans lequel il se trouve, ce qui n'est pas le cas de l'HDMI. De plus, contrairement à l'HDMI, le DisplayPort est une conception dite royalty-free, celui signifie que les constructeurs n'ont pas besoin de verser des mensualités et des taxes lorsqu'ils installent des ports sur leurs équipements.
+	Le DisplayPort 1.4 est dévoilé en Mars 2016 et orioisaut ke transfert de cibteby de résikytuib laxulake de 8K à 60Hz.
+
+> Le Thunderbolt
+	Le Thunderbolt correspond à une interface technologique à grande vitesse sorti en 2011 et qui propose en sortie un signal série à partir d'une combinaison de PCI Express et de DisplayPort. Il n'est pas seulement utilisé pour diffuser de la vidéo mais également pour attacher d'autres périphériques externes. Le Thunderbolt permet de gérer en cascade jusqu'à 6 appareils. Il est surtout replié sur du matériel Apple, bien qu'aujourd'hui on le retrouve également sur des PC.
+	On peut distinguer 3 versions de Thunderbolt :
+ - Les premières et deuxièmes générations utilisaient le même connecteur qu'un mini DisplayPort
+- La version 3 utilise un connecteur USB-C.

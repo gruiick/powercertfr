@@ -1,0 +1,28 @@
+Qu'est ce que l'ARP?
+
+	ARP est l'acronyme d'Address Resolution Protocol, il s'agit d'un protocole utilisé pour récupérer une adresse MAC à partir d'une adresse IP. Une adresse MAC est une adresse physique d'un appareil en mesure de communiquer en réseau ; Elle se comporte en quelque sorte comme un numéro d'identité et se présente sous la forme d'une série de 6 binômes de 2 nombres hexadécimaux. Et les appareils se servent donc de l'ARP pour récupérer l'adresse MAC d'un autre appareil.
+
+		[Exemple d'une adresse MAC]
+
+	Info supplémentaire : Dans l'objectif d'améliorer la sécurité des appareils Apple, le constructeur a décidé depuis la mise à jour iOS 10 de générer une adresse mal aléatoire à chaque fois qu'un appareil souhaitait se connecter à un réseau Wi-Fi.
+
+	Prenons un cas de figure :
+	Un ordinateur A cherche à communiquer avec un ordinateur B. L'ordinateur A connait déjà l'adresse IP de l'ordinateur B, mais afin de communiquer avec lui, il a tout de même besoin de son adresse MAC. En effet, l'adresse IP est utilisée pour localiser un appareil sur un réseau, tandis que l'adresse MAC est ce qui permet d'identifier l'appareil en question à cette localisation. Afin de connaitre l'adresse MAC de son destinataire, l'ordinateur A va en premier temps s'intéresser à la propre liste interne, que l'on appelle le cache ARP, pour vérifier si l'adresse IP de l'ordinateur B ne coïncide pas (correspond pas?) déjà à une adresse MAC.
+	On peut vérifier ce fait par le biais de l'exécution de la commande arp -a sur un terminal Windows ou MacOS, et /sbin/arp sous Linux. Si le terminal affiche en sortie "No ARP Entries Found", cela signifie que le cache ARP est vide. Pour y remédier, l'ordinateur A va envoyer un message en Broadcast sur le réseau demandant à tous les appareils qui se trouvent dessus, lequel d'entre eux possède l'adresse IP spécifique et quelle est son adresse MAC. La machine qui possède l'adresse IP correspondante va répondre à la requête en y joignant son adresse MAC. Une fois que l'ordinateur A a bien réceptionné les données, la communication entre les deux appareils peut s'opérer.
+
+	L'ordinateur A ayant bien récupéré l'adresse MAC de l'ordinateur B, il va pouvoir le stocker dans le cache ARP, de sorte à ne pas avoir besoin de réaliser de nouveau une requête en Broadcast pour communiquer avec le même appareil. Désormais, lorsqu'on retourne dans la console et que l'on execute de nouveau la commande arp -a, on obtiendra en sortie :
+	Internal Address 	Physical Address 	Type
+	10.0.0.4		07-e4-f7-77-c5-d2	dynamic
+
+On peut donc observer que l'adresse MAC et l'adresse IP correspondante ont bien été rajoutées au cache ARP de l'ordinateur A.
+
+	Le cache ARP a été conçu pour rendre le réseau plus efficace : il stocke les associations entre les adresses IP et les adresses MAC. De cette manière, la prochaine fois qu'un appareil a besoin de communiquer avec un autre sur le réseau, il n'a pas besoin d'envoyer un message en Broadcast sur l'ensemble du réseau, il lui suffit de se tourner vers le cache ARP.
+	On peut distinguer deux types d'entrées ARP : Dynamic (dynamique) ou Static (statique). Une entrée dynamique est automatiquement crée lorsqu'un appareil envoi un message en Broadcast sur un réseau en sollicitant une adresse MAC. C'est pour cela que le binôme adresse IP/adresse MAC de notre exemple précédent est indiquée en dynamic. Les entrées dynamiques de sont pas permanentes et sont régulièrement évacuées de manière à ne pas remplir le cache ARP d'adresse MAC qui ne sont pas utilisées. Une entrée statique est une entrée pour laquelle un utilisateur va inscrire manuellement l'association entre une adresse IP et une adresse MAC par le biais de l'utilisation d'une ligne de commande. Par exemple, elle peut etre la suivante :
+	arp -s 10.0.0.3 1a-51-02-91-ba-8c
+
+Si l'on exécute à présent de nouveau la commande arp -a, on obtiendra en sortie :
+	Internal Address 	Physical Address 	Type
+	10.0.0.4		07-e4-f7-77-c5-d2	dynamic
+	10.0.0.3		1a-51-02-91-ba-8c	static
+
+	Les administrateurs réseau utilisent en général des entrées statiques pour réduire les requêtes en Broadcast inutiles sur un réseau. A titre d'exemple, les adresses statiques sont idéales dans le cas où il est certain que deux appareils vont communiquer entre eux très régulièrement.
