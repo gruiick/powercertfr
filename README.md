@@ -10,6 +10,6 @@ Disclaimer: Les vidéos originales en anglais sont la propriété de la chaîne 
 
 ----
 
-Matériel de base pour l'ouvrage "Guide du ..." par Orlando Taylor
+Matériel de base pour l'ouvrage "Le guide du réseau et du hardware" par Orlando Taylor
 
 
