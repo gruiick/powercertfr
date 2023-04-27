@@ -6,9 +6,9 @@ Le guide du réseau et du hardware
 
 ## câbles
 
-## connecteurs
-
 ## != câbles, DSL et fibre
+
+## connecteurs
 
 ## modem, hub, switch et routeur
 
@@ -102,3 +102,8 @@ Le guide du réseau et du hardware
 
 ## Outils réseau (pinces, testeurs, etc)
 
+# Chapitre 9 : Annexes
+
+## PVC Plenum, Riser et General
+
+## Glossaire

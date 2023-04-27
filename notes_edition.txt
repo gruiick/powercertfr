@@ -1,0 +1,16 @@
+
+les notes entre [] sont:
+
+- des références qui ne doivent pas apparaitre dans le document final
+
+ex: [ref: https://en.wikipedia.org/wiki/Platypus]
+
+- des appels à correction ou commentaire
+
+ex: [reprendre: expliquer l'ornithorynque]
+
+- des notes d'explications qui ne doivent pas apparaître dans le document final
+
+ex: [historique: c'est sympa, mais on s'en fout en 2023]
+
+
