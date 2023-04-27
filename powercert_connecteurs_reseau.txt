@@ -4,6 +4,7 @@ CONNECTEURS RESEAU
 	Dans la même idée que les RJ-45, bien qu'il ne soit pas nécessairement considéré comme un connecteur, on trouve le coupleur UTP permettant de connecter deux câbles UTP avec un connecteur RJ-45 entre-eux. Ils sont typiquement utilisés lorsqu'il n'est pas possible d'installer un seul grand câble. Le coupleur UTP a pour objectif d'étendre la longueur d'un câble réseau en rejoignant deux d'entre eux en 1 seul connecteur.
 
 	Un autre type de connecteur similaire au RJ-45 est le RJ-48, à la différence près que les connecteurs RJ-48 sont utilisés pour des cables STP, Shielded Twisted Pair, soit des paires torsadées du même ordre que l'UTP mais avec une gaine de protection supplémentaire. Ils sont généralement utilisés sur les lignes T1 et sont câblés différemment par rapport aux RJ-45 classiques.
+	[historique, poubelle ^]
 
 	Le RJ-11 est un connecteur à pins principalement utilisé pour connecter des équipement téléphoniques, mais ils sont également utilisés pour connecter des ordinateurs à un réseau local à travers le modem de l'ordinateur. Comme pour le RJ-45, le RJ-11 se verrouille en place grâce à une languette lorsqu'il est inséré dans la prise adéquate.
 
