@@ -84,6 +84,8 @@ Le guide du réseau et du hardware
 
 # Chapitre 8 : Composants d'ordinateur
 
+## principe d'un serveur
+
 ## processeur, chipset, north/southbridge
 
 ## carte mère + form factor
@@ -95,6 +97,8 @@ Le guide du réseau et du hardware
 ## 32 vs 64 bits
 
 ## USB
+
+## stockage (hdd -> SAN)
 
 ## Écrans et câbles, +protocoles
 
