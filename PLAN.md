@@ -4,9 +4,7 @@ Le guide du réseau et du hardware
 
 # Chapitre 1 : couche physique
 
-## câbles
-
-## != câbles, DSL et fibre
+## câbles + != câbles, DSL et fibre
 
 ## connecteurs
 
